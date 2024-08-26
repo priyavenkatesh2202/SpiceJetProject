@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-26T13:47:56 IST" name="Suite" finished-at="2024-08-26T13:50:37 IST" duration-ms="161008">
+    <groups>
+    </groups>
+    <test started-at="2024-08-26T13:47:56 IST" name="Test" finished-at="2024-08-26T13:50:37 IST" duration-ms="161008">
+      <class name="test.RoundWayTC_001">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.RoundWayTC_001@42bc14c1]" started-at="2024-08-26T13:48:30 IST" name="launchingBrowser" finished-at="2024-08-26T13:48:40 IST" duration-ms="9288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="OneWay()[pri:0, instance:test.RoundWayTC_001@42bc14c1]" started-at="2024-08-26T13:48:40 IST" name="OneWay" finished-at="2024-08-26T13:49:12 IST" duration-ms="32327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OneWay -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.RoundWayTC_001@42bc14c1]" started-at="2024-08-26T13:49:12 IST" name="closingBrowser" finished-at="2024-08-26T13:49:12 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.RoundWayTC_001 -->
+      <class name="test.VerifyTitle">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.VerifyTitle@6f3c660a]" started-at="2024-08-26T13:50:22 IST" name="launchingBrowser" finished-at="2024-08-26T13:50:35 IST" duration-ms="12536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="verifyTitle()[pri:0, instance:test.VerifyTitle@6f3c660a]" started-at="2024-08-26T13:50:35 IST" name="verifyTitle" finished-at="2024-08-26T13:50:37 IST" duration-ms="1768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.VerifyTitle@6f3c660a]" started-at="2024-08-26T13:50:37 IST" name="closingBrowser" finished-at="2024-08-26T13:50:37 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.VerifyTitle -->
+      <class name="test.SignUpTC_002">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTC_002@62ef27a8]" started-at="2024-08-26T13:49:30 IST" name="launchingBrowser" finished-at="2024-08-26T13:49:39 IST" duration-ms="8839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="signUpInvalid()[pri:0, instance:test.SignUpTC_002@62ef27a8]" started-at="2024-08-26T13:49:39 IST" name="signUpInvalid" finished-at="2024-08-26T13:49:51 IST" duration-ms="11797" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Please enter valid mobile number] but found [Member account exists with given mobile number]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Please enter valid mobile number] but found [Member account exists with given mobile number]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at utils.UtilityClass.soft_assert(UtilityClass.java:61)
+at page.SignUpPage.verify2(SignUpPage.java:278)
+at test.SignUpTC_002.signUpInvalid(SignUpTC_002.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpInvalid -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.SignUpTC_002@62ef27a8]" started-at="2024-08-26T13:49:51 IST" name="closingBrowser" finished-at="2024-08-26T13:49:51 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.SignUpTC_002 -->
+      <class name="test.LogInTC_002">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.LogInTC_002@460ebd80]" started-at="2024-08-26T13:50:05 IST" name="launchingBrowser" finished-at="2024-08-26T13:50:19 IST" duration-ms="14546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="LogTeInvalid()[pri:0, instance:test.LogInTC_002@460ebd80]" started-at="2024-08-26T13:50:19 IST" name="LogTeInvalid" finished-at="2024-08-26T13:50:22 IST" duration-ms="2451" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Invalid Username/Password] but found [Hi Priya]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Invalid Username/Password] but found [Hi Priya]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at utils.UtilityClass.soft_assert(UtilityClass.java:61)
+at page.LoginInPage.verify2(LoginInPage.java:70)
+at test.LogInTC_002.LogTeInvalid(LogInTC_002.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogTeInvalid -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.LogInTC_002@460ebd80]" started-at="2024-08-26T13:50:22 IST" name="closingBrowser" finished-at="2024-08-26T13:50:22 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.LogInTC_002 -->
+      <class name="test.SignUpTC_001">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.SignUpTC_001@531f4093]" started-at="2024-08-26T13:49:12 IST" name="launchingBrowser" finished-at="2024-08-26T13:49:21 IST" duration-ms="8664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="signUP()[pri:0, instance:test.SignUpTC_001@531f4093]" started-at="2024-08-26T13:49:21 IST" name="signUP" finished-at="2024-08-26T13:49:30 IST" duration-ms="9569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUP -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.SignUpTC_001@531f4093]" started-at="2024-08-26T13:49:30 IST" name="closingBrowser" finished-at="2024-08-26T13:49:30 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.SignUpTC_001 -->
+      <class name="test.LogInTC_001">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.LogInTC_001@6436a7db]" started-at="2024-08-26T13:49:51 IST" name="launchingBrowser" finished-at="2024-08-26T13:50:01 IST" duration-ms="9812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="LogTe()[pri:0, instance:test.LogInTC_001@6436a7db]" started-at="2024-08-26T13:50:01 IST" name="LogTe" finished-at="2024-08-26T13:50:05 IST" duration-ms="3465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogTe -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.LogInTC_001@6436a7db]" started-at="2024-08-26T13:50:05 IST" name="closingBrowser" finished-at="2024-08-26T13:50:05 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.LogInTC_001 -->
+      <class name="test.OneWayTC_001">
+        <test-method is-config="true" signature="launchingBrowser(java.lang.String,java.lang.String)[pri:0, instance:test.OneWayTC_001@29a0cdb]" started-at="2024-08-26T13:47:56 IST" name="launchingBrowser" finished-at="2024-08-26T13:48:03 IST" duration-ms="7440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.spicejet.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="OneWay()[pri:0, instance:test.OneWayTC_001@29a0cdb]" started-at="2024-08-26T13:48:03 IST" name="OneWay" finished-at="2024-08-26T13:48:30 IST" duration-ms="27138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OneWay -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.OneWayTC_001@29a0cdb]" started-at="2024-08-26T13:48:30 IST" name="closingBrowser" finished-at="2024-08-26T13:48:30 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- test.OneWayTC_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

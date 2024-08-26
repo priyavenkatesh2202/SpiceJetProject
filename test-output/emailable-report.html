@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">161,008</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.LogInTC_002</td><td><a href="#m0">LogTeInvalid</a></td><td rowspan="1">1724660419693</td><td rowspan="1">2451</td></tr><tr class="failedodd"><td rowspan="1">test.SignUpTC_002</td><td><a href="#m1">signUpInvalid</a></td><td rowspan="1">1724660379715</td><td rowspan="1">11797</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.LogInTC_001</td><td><a href="#m2">LogTe</a></td><td rowspan="1">1724660401572</td><td rowspan="1">3465</td></tr><tr class="passedodd"><td rowspan="1">test.OneWayTC_001</td><td><a href="#m3">OneWay</a></td><td rowspan="1">1724660283567</td><td rowspan="1">27138</td></tr><tr class="passedeven"><td rowspan="1">test.RoundWayTC_001</td><td><a href="#m4">OneWay</a></td><td rowspan="1">1724660320124</td><td rowspan="1">32327</td></tr><tr class="passedodd"><td rowspan="1">test.SignUpTC_001</td><td><a href="#m5">signUP</a></td><td rowspan="1">1724660361244</td><td rowspan="1">9569</td></tr><tr class="passedeven"><td rowspan="1">test.VerifyTitle</td><td><a href="#m6">verifyTitle</a></td><td rowspan="1">1724660435239</td><td rowspan="1">1768</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">test.LogInTC_002#LogTeInvalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Invalid Username/Password] but found [Hi Priya]
+	at utils.UtilityClass.soft_assert(UtilityClass.java:61)
+	at page.LoginInPage.verify2(LoginInPage.java:70)
+	at test.LogInTC_002.LogTeInvalid(LogInTC_002.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.SignUpTC_002#signUpInvalid</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Please enter valid mobile number] but found [Member account exists with given mobile number]
+	at utils.UtilityClass.soft_assert(UtilityClass.java:61)
+	at page.SignUpPage.verify2(SignUpPage.java:278)
+	at test.SignUpTC_002.signUpInvalid(SignUpTC_002.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.LogInTC_001#LogTe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.OneWayTC_001#OneWay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.RoundWayTC_001#OneWay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.SignUpTC_001#signUP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.VerifyTitle#verifyTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
